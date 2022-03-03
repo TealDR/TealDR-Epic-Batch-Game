@@ -1,5 +1,6 @@
 :start
 @echo off
+COLOR 05
 title Epic Quest
 echo RULES
 echo ----------------------
@@ -102,4 +103,4 @@ Pause
 cls
 echo The Cave
 echo ----------------------
-echo 
+echo Slash! You swing the blade towards the wolf. Slice! 
