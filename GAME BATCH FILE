@@ -125,6 +125,7 @@ cls
 echo The Cave
 echo ----------------------
 echo The room shines with brightness like the heavens. In two swift moves, the glistening dagger strikes down the wolf like lightning.
+Pause
 cls
 echo The Cave
 echo ----------------------
@@ -139,18 +140,24 @@ cls
 echo The Cave
 echo ----------------------
 echo What do you choose to do?
-echo 1. Leave the cave
-echo 2. Explore the cave
+echo 1. Explore the cave
+echo 2. Leave the cave
 set /p %input%=
 if %input%==1 goto 8
 if %input%==2 goto 9
 :8 
+cls
+echo The Outside
+echo ----------------------
 echo You leave the cave, gasping for air and limping. You feel a relief on your stiff shoulders as the sun rays hit your face.
 echo You collapse on the ground, hoping to get some rest, just as the sky starts to turn a crimson red...
 Pause
 cls
 echo THE END SO FAR
 :9
+cls
+echo The Cave
+echo ----------------------
 echo You turn around and start awkwardly walking into the depths of the cavern
 Pause
 cls
