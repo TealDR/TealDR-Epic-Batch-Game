@@ -146,10 +146,9 @@ echo ----------------------
 echo What do you choose to do?
 echo 1. Go outside
 echo 2. Explore the cave
-set /p %input%= 
+set /p input= 
 if %input%==1 goto 8
 if %input%==2 goto 9
-
 :8
 cls
 echo The Outside
@@ -161,7 +160,6 @@ cls
 echo THE END SO FAR
 Pause
 exit
-
 :9
 cls
 echo The Cave
