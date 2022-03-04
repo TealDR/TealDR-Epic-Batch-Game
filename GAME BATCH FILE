@@ -13,6 +13,7 @@ echo Type 2 for Light Mode
 set /p Input=
 if %input%==1 goto darkmode
 if %input%==2 goto lightmode
+if %input%==TEST goto 7
 
 :opening
 cls
@@ -155,6 +156,8 @@ echo You collapse on the ground, hoping to get some rest, just as the sky starts
 Pause
 cls
 echo THE END SO FAR
+Pause
+end
 
 :9
 cls
@@ -164,3 +167,5 @@ echo You turn around and start awkwardly walking into the depths of the cavern
 Pause
 cls
 echo THE END SO FAR
+Pause
+end
