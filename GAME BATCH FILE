@@ -140,12 +140,13 @@ cls
 echo The Cave
 echo ----------------------
 echo What do you choose to do?
-echo 1. Explore the cave
-echo 2. Leave the cave
-set /p %input%=
+echo 1. Go outside
+echo 2. Explore the cave
+set /p %input%= 
 if %input%==1 goto 8
 if %input%==2 goto 9
-:8 
+
+:8
 cls
 echo The Outside
 echo ----------------------
@@ -154,6 +155,7 @@ echo You collapse on the ground, hoping to get some rest, just as the sky starts
 Pause
 cls
 echo THE END SO FAR
+
 :9
 cls
 echo The Cave
