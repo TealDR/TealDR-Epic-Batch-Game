@@ -1,9 +1,9 @@
 :start
 @echo off
-title Epic Quest
+title Epic Quest©
 echo RULES
 echo ----------------------
-echo This game is property of Thomas Qiu Elson
+echo This game is property of Thomas Elson
 echo Please do not claim this as yours!
 echo To choose an option, you must type just the number. Please do not type 'one' or '1.' You must type 1 if you wish to choose option 1.
 
@@ -23,7 +23,7 @@ cls
 echo Opening
 echo ----------------------
 echo.
-echo Welcome to my epic text game...
+echo Welcome to Epic Text Game (patent pending)...
 echo.
 Pause
 goto 1
