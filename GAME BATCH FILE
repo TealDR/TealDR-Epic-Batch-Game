@@ -157,7 +157,7 @@ Pause
 cls
 echo THE END SO FAR
 Pause
-end
+exit
 
 :9
 cls
@@ -168,4 +168,4 @@ Pause
 cls
 echo THE END SO FAR
 Pause
-end
+exit
