@@ -146,7 +146,7 @@ if %input%==1 goto 8
 if %input%==2 goto 9
 :8 
 echo You leave the cave, gasping for air and limping. You feel a relief on your stiff shoulders as the sun rays hit your face.
-echo You collapse on the ground, hoping to get some rest just as the sky starts to turn a crimson red...
+echo You collapse on the ground, hoping to get some rest, just as the sky starts to turn a crimson red...
 Pause
 cls
 echo THE END SO FAR
