@@ -1,12 +1,20 @@
 :start
 @echo off
-COLOR 05
 title Epic Quest
 echo RULES
 echo ----------------------
 echo This game is property of Thomas Qiu Elson
 echo Please do not claim this as yours!
-Pause
+
+echo SETTINGS
+echo ----------------------
+echo Type 1 for Dark Mode
+echo Type 2 for Light Mode
+set /p Input=
+if %input%==1 goto darkmode
+if %input%==2 goto lightmode
+
+:opening
 cls
 echo Opening
 echo ----------------------
@@ -14,7 +22,15 @@ echo.
 echo Welcome to my epic text game...
 echo.
 Pause
+goto 1
 
+:lightmode
+COLOR 70
+goto opening
+
+:darkmode
+COLOR 07
+goto opening
 :1
 cls
 echo The Cave
@@ -23,7 +39,7 @@ echo You awake in a dark cave. What do you do?
 echo 1. Feel around you
 echo 2. Check your body to see your condition and equipment
 echo 3. Lie down and give up
-set /p input=What do you want to do?
+set /p input=What do you want to do? 
 if %input%==1 goto 2
 if %input%==2 goto 3
 if %input%==3 exit
@@ -61,7 +77,7 @@ echo What do you do?
 echo 1. Try and run for your life
 echo 2. Try to evade the wolf's attacks
 echo 3. Give up
-set /p input=What do you want to do?
+set /p input=What do you want to do? 
 if %input%==1 goto 6
 if %input%==2 goto 7
 if %input%==3 Pause exit
@@ -103,4 +119,39 @@ Pause
 cls
 echo The Cave
 echo ----------------------
-echo Slash! You swing the blade towards the wolf. Slice! 
+echo As you grip the hilt of the sword, sudden cracks of light run down the length of the rusty blade.
+Pause
+cls
+echo The Cave
+echo ----------------------
+echo The room shines with brightness like the heavens. In two swift moves, the glistening dagger strikes down the wolf like lightning.
+cls
+echo The Cave
+echo ----------------------
+echo You breathe heavily, cuts covering your body. You wonder how you are even still alive with so many wounds, but still glad that you survived.
+Pause
+cls
+echo The Cave
+echo ----------------------
+echo Now you wonder what to do, the cave exit has suddenly opened up as you defeated the wolf, but the cave has yet to be explored.
+Pause
+cls
+echo The Cave
+echo ----------------------
+echo What do you choose to do?
+echo 1. Leave the cave
+echo 2. Explore the cave
+set /p %input%=
+if %input%==1 goto 8
+if %input%==2 goto 9
+:8 
+echo You leave the cave, gasping for air and limping. You feel a relief on your stiff shoulders as the sun rays hit your face.
+echo You collapse on the ground, hoping to get some rest just as the sky starts to turn a crimson red...
+Pause
+cls
+echo THE END SO FAR
+:9
+echo You turn around and start awkwardly walking into the depths of the cavern
+Pause
+cls
+echo THE END SO FAR
