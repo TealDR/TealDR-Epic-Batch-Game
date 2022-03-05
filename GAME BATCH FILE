@@ -7,6 +7,7 @@ echo This game is property of ME
 echo Please do not claim this as yours!
 echo To choose an option, you must type just the number. Please do not type 'one' or '1.' You must type 1 if you wish to choose option 1.
 
+:settings
 Pause
 cls
 echo SETTINGS
@@ -16,7 +17,13 @@ echo Type 2 for Light Mode
 set /p Input=
 if %input%==1 goto darkmode
 if %input%==2 goto lightmode
-if %input%==TEST goto 7
+if %input%== goto settings
+
+:end
+echo The end
+echo Press any key to restart
+Pause
+goto 1
 
 :opening
 cls
@@ -46,7 +53,7 @@ echo 3. Lie down and give up
 set /p input=What do you want to do? 
 if %input%==1 goto 2
 if %input%==2 goto 3
-if %input%==3 exit
+if %input%==3 end
 goto 1
 
 :2
@@ -84,7 +91,7 @@ echo 3. Give up
 set /p input=What do you want to do? 
 if %input%==1 goto 6
 if %input%==2 goto 7
-if %input%==3 Pause exit
+if %input%==3 Pause goto end
 
 :6
 cls
@@ -102,7 +109,7 @@ echo The Cave
 echo ----------------------
 echo Despair overwhelms you. The wolf catches up to you, and with one swipe, it all goes black.
 Pause
-exit
+goto end
 
 :7
 cls
@@ -159,7 +166,7 @@ Pause
 cls
 echo THE END SO FAR
 Pause
-exit
+
 :9
 cls
 echo The Cave
@@ -169,4 +176,3 @@ Pause
 cls
 echo THE END SO FAR
 Pause
-exit
